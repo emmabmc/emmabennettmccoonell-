@@ -57,7 +57,7 @@ print(10 == 9) #False, 10 is not equal to 9
 print(10 <= 9) #False, 10 is not less than or equal to 9
 bool("abc") #True, non-empty string is True
 bool(["apple", "cherry", "banana"])#True, non-empty list is True
-bool[True] #True, True is True
+bool(True) #True, True is True
 bool(False) #False, False is False
 bool(0) #False, 0 is False
 bool("") #False, empty string is False
@@ -78,8 +78,8 @@ bool(not True) #False, not True is False
 3) in like 81, it's true because I previously declared a to equal 10, so a equals 10
 4) in line 82, it's false because I previously declare b to equal 1.5, so it is false that b equals 2.5
 '''
-bool(a = 10)
-bool(b = 2.5)
+bool(a == 10)
+bool(b == 2.5)
 
 # --- Operators ---
 # 3.3.1. Arithmetic Operators
@@ -139,9 +139,32 @@ my_string * 7 #returns hellohellohellohellohellohellohello, repeats the string 7
 
 #3.4.1 questions 
 #1) slicing means to extract a portion of a string or creating a substring, line 134 and 135 slicing the string or creates a substring
-
+#2)
 name = "Oski"
 print("Hello, my name is " + name) #prints Hello, my name is Oski, combines the string with the variable name
+#3)
 name = "Oski"
 print(f"Hello, my name is {name}") #prints Hello, my name is Oski, combines the string with the variable name. f tells python to evaluate what is in the curly braces. 
+#4)using f tells python to evaluate what is in the curly braces, while using + combines the string with the variable name.
 
+# --- Terminal Commands ---
+
+#cd, changes the directory, use it to move into a folder, EX: cd Desktop
+#ls, lists the files and folders in the current directory, use it to see what is in the current directory, EX: ls 
+#ls -a, lists all files and folders in the current directory, including hidden files and folders, use it to see everything in the current directory, EX: ls -a
+#mkdir, makes a new directory, use it to create a new folder, EX: mkdir new_folder
+#cat, displays the contents of a file, use it to see what is in a file, EX: cat homework1.py
+#pwd, prints the current working directory, use it to see where you are in the file system, EX: pwd
+#cd .., moves up one directory, use it to go back to the previous folder, EX: cd ..
+#cd ., stays in the current directory, use it to stay in the current folder, EX: cd .
+#cd ~, moves to the home directory, use it to go to the home folder, EX: cd ~
+#cp, copies a file or directory, use it to make a copy of a file or folder, EX: cp file.txt new_file.txt
+#mv, moves a file or directory, use it to move a file or folder to a new location, EX: mv file.txt new_folder/
+#rm, removes a file or directory, use it to delete a file or folder, EX: rm file.txt
+#clear, clears the terminal screen, use it to clear the terminal, EX: clear
+#grep, searches for a specific string in a file, use it to find a specific word or phrase in a file, EX: grep "hello" file.txt
+
+#1) less interactivly opens a file so you can scroll. touch creates a new file or updates the timestamp of an existing file. code creates a new for script.
+#2) ls -a shoes hidden files and folders while ls shows only visible files and folders.
+#3) files that do not show up when using ls and the files start with a . 
+#4) -l gives you more information like when a file was created, -v shows the version of the program, -h shows the file size in a human readable format.
