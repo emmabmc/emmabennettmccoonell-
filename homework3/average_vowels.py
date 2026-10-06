@@ -9,8 +9,8 @@
 # Name this function: counting_vowels_and_consonants()
 
 def counting_vowels_and_consonants(p):
-    x = len(p)
-    y = p.lower()
+    x = len(p) 
+    y = p.lower() 
     v = 0
     c = 0
     for i in range(x):
